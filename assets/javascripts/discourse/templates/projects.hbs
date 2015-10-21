@@ -6,39 +6,39 @@
         <span class="vertical-align--middle">Security Headers</span>
       {{/link-to}}
     </h4>
-    <p>{{model.[0].description}}</p>
     <div>
       <span class="mr-">{{fa-icon "code-fork"}} {{model.[0].forks_count}}</span>
       <span class="mr-">{{fa-icon "star"}} {{model.[0].stargazers_count}}</span>
     </div>
+    <p>A plugin to our community site that allows you to grade your websites HTTP security headers and collects data about how the the top 10,000 sites implement them.</p>
   </div>
 
   <div class="bo-b--1 mb pb">
     <h4 class="mb-">
       {{#link-to 'csp-reports'}}
         <i class="sci sci--lg sci__view-list mr-"></i>
-        <span class="vertical-align--middle">Security Reports</span>
+        <span class="vertical-align--middle">CSP Reports</span>
       {{/link-to}}
     </h4>
-    <p>{{model.[1].description}}</p>
     <div>
       <span class="mr-">{{fa-icon "code-fork"}} {{model.[1].forks_count}}</span>
       <span class="mr-">{{fa-icon "star"}} {{model.[1].stargazers_count}}</span>
     </div>
+    <p>A tool that allows you to collect Content Security Policy (CSP) violations, helpful when implementing and configuring CSP.</p>
   </div>
 
-  <div class="bo-b-1 mb pb">
+  <div class="bo-b--1 mb pb">
     <h4 class="mb--">
       {{#link-to 'bughunt'}}
         <i class="sci sci--lg sci__trophy mr-"></i>
-        <span class="vertical-align--middle">Bug Hunt</span>
+        <span class="vertical-align--middle">BugHunt</span>
       {{/link-to}}
     </h4>
-    <p>{{model.[2].description}}</p>
     <div>
       <span class="mr-">{{fa-icon "code-fork"}} {{model.[2].forks_count}}</span>
       <span class="mr-">{{fa-icon "star"}} {{model.[2].stargazers_count}}</span>
     </div>
+    <p>Interact with our open-source Twitter bot and find interesting real-world security bugs in code.</p>
   </div>
 </div>
 

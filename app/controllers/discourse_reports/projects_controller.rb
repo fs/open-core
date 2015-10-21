@@ -15,7 +15,7 @@ module DiscourseReports
     private
 
     def projects
-      %w(security-headers csp-reports bughunt-leaderboard).map do |project|
+      %w(security-headers csp-reports bughunt).map do |project|
         JSON.parse(Faraday.get("https://api.github.com/repos/srcclr/#{project}?#{auth_params}").body)
       end
     end
