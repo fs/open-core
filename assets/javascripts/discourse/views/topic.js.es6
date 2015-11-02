@@ -1,6 +1,8 @@
 import TopicView from 'discourse/views/topic';
 import ArchetypeTemplate from 'discourse/plugins/Discourse reports/discourse/mixins/archetype-template';
 
+const ARCHETYPE_REGULAR = 'regular';
+
 export default TopicView.reopen({
   templateName: function() {
     return ArchetypeTemplate.get(this.get('topic'), 'topic');
@@ -14,10 +16,10 @@ export default TopicView.reopen({
 
   didInsertElement: function() {
     let archetype = this.get('topic').get('archetype');
-    $('.navbar__item--guides').toggleClass('active', archetype === 'toc')
+    Ember.$('body').toggleClass('height--normal', archetype === ARCHETYPE_REGULAR);
   },
 
   willDestroyElement: function() {
-    $('.navbar__item--guides').removeClass('active');
-  }
+   Ember.$('body').removeClass('height--normal');
+ }
 });
