@@ -115,25 +115,29 @@ $header-color: #202528;
     text-align: right;
   }
 
-  .nav {
-    background: none;
+  .nav-wrap {
+    height: $navbar-height;
 
-    .navbar__item {
-      height: $navbar-height;
+    .nav {
+      background: none;
 
-      &::after {
-        display: none;
+      .navbar__item {
+        height: $navbar-height;
+
+        &::after {
+          display: none;
+        }
       }
-    }
 
-    .navbar__link {
-      display: block;
-      padding: 0 1em;
-      height: $navbar-height;
-      line-height: $navbar-height;
+      .navbar__link {
+        display: block;
+        padding: 0 1em;
+        height: $navbar-height;
+        line-height: $navbar-height;
 
-      &:hover {
-        background: none;
+        &:hover {
+          background: none;
+        }
       }
     }
   }
